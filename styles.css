@@ -1,6 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,300&display=swap');
+
 html, body {
   margin: 0;
   padding: 0;
+  font-family: Roboto, sans-serif;
+}
+
+.header, .hero, .random-info-container, .quote-container, .call-to-action {
+  padding-left: 125px;
+  padding-right: 125px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+
+}
+
+.header ul {
+  margin-left: auto;
+  display: flex;
+  gap: 20px;
 }
 
 .header-logo {
@@ -11,14 +31,28 @@ html, body {
 
 h1 {
   font-size: 48px;
-  /* change to extra bold */
-  font-weight: bold;
+  font-weight: 900;
   color: #f9faf8;
 }
 
-.hero-secondary-text {
+.hero {
+  display: flex;
+  gap: 50px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.hero img {
+  max-width: 500px;
+  border-radius: 5px;
+}
+
+.hero-text p {
   font-size: 18px;
-  color: #e5e7eb  ;
+}
+
+li a, .hero-text p, .footer {
+  color: #e5e7eb;
 }
 
 .header, .hero, .footer {
@@ -27,13 +61,36 @@ h1 {
 
 button {
   background-color: #3882f6;
+  color: #f9faf8;
+  font-weight: bold;
+  padding: 10px 30px;
+  border-radius: 5px;
+  border: none;
 }
 
 h2 {
   font-size: 36px;
-  /* change to extra-bold */
-  font-weight: bold;
+  font-weight: 900;
   color: #1f2937;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.cards img {
+  border: 3px #3882f6 solid;
+  border-radius: 10px;
+}
+
+.cards p {
+  text-align: center;
+}
+
+.cards p, .cards img {
+  max-width: 250px;
 }
 
 .quote-container {
@@ -45,15 +102,53 @@ h2 {
   /* change to light italic */
   font-style: italic;
   color: #1f2937;
+  padding-top: 100px;
+  margin-bottom: 10;
+}
+
+.quote-person {
+  margin-top: 0;
+  color: #1f2937;
+  font-size: 26px;
+  font-weight: bold;
+  padding-bottom: 100px;
+  text-align: right;
+}
+
+.call-to-action {
+  padding-top: 75px;
+  padding-bottom: 75px;
 }
 
 .call-to-action-container {
   background-color: #3882f6;
+  border-radius: 7px;
+  color: #f9faf8;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#call-to-action-heading {
+  font-size: 24px;
+  font-weight: 900;
+  color: #f9faf8;
+  padding: 0;
+  margin: 0;
+}
+
+#call-to-action-content {
+  color: #e5e7eb;
+  padding: 0;
+  margin: 0;
 }
 
 .call-to-action-container button {
-  border: 2px white solid;
-  border-radius: 5px;
+  border: 2px #f9faf8 solid;
+  padding: 10px 30px;
+  font-weight: bold;
 }
 
 li {
@@ -62,4 +157,11 @@ li {
 
 a {
   text-decoration: none;
+}
+
+.footer {
+  font-size: 14px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
