@@ -28,6 +28,10 @@ body {
   align-items: center;
 }
 
+.header a:hover {
+  color: var(--clr-light, #3882f6);
+}
+
 .header ul {
   margin-left: auto;
 
@@ -87,6 +91,14 @@ li a,
   border-radius: 5px;
   
   padding: 10px 30px;
+
+  transition: all 0.15s;
+}
+
+.hero a:hover,
+.call-to-action-container a:hover {
+  color: var(--clr-light, #3882f6);
+  background-color: var(--clr-off-white-1, #f9faf8);
 }
 
 h2 {
@@ -179,6 +191,8 @@ h2 {
   border: 2px var(--clr-off-white-1, #f9faf8) solid;
 
   padding: 10px 30px;
+
+  transition: all 0.15s;
 }
 
 li {
@@ -187,6 +201,8 @@ li {
 
 a {
   text-decoration: none;
+
+  transition: all 0.15s;
 }
 
 .footer {
